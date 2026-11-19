@@ -12,7 +12,7 @@ function checkPostgres() {
   };
 
   exec(
-    "sudo docker exec postgres-dev pg_isready --host localhost",
+    "sudo docker exec clothes-manager-dev pg_isready --host localhost",
     handleReturn,
   );
 }
